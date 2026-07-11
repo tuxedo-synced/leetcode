@@ -1,5 +1,6 @@
 class Solution {
     public int[] sortArrayByParity(int[] nums) {
+        // another approch :- int i = 0 , j = 0;
         int i = 0 , j = nums.length - 1;
         while(i <= j){
             while(i <= j && nums[i] % 2 == 0) i+=1;
