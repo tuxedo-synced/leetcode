@@ -15,4 +15,24 @@ class Solution {
     }
 }
 
-// greedy approch explained by striver , same time complexity but no need of HashMap
+/*
+the below approch is just used to return true or false but when we want to do the problem and return the index then we also need to ue hashmap to store original index before sorting which is again taking extra space .
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Arrays.sort(nums);
+        int i = 0 , j = nums.length - 1 ;
+        int[] ans = new int[2];
+        while(i <= j){
+            if(nums[i] + nums[j] == target){
+                return true ;
+            }else if(nums[i] + nums[j] > target){
+                j-=1;
+            }else{
+                i+=1;
+            }
+        }
+        return ans;
+    }
+}
+*/
